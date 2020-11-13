@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragement">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="381dp"
+        android:gravity="center"
+        android:text="Hello Blank Fragment 1"
+        android:textSize="24sp"
+        app:autoSizeTextType="none" />
+
+    <Button
+        android:id="@+id/Fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="1000px"
+        android:background="@color/colorAccent"
+        android:text="This is  Fragment 1" />
+</FrameLayout>

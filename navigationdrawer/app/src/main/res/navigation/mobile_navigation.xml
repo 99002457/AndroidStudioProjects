@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.lnt.navigationdrawer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_internalstorage"
+            app:destination="@id/internalstorage" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery2"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow2"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_home_to_externalstorage"
+            app:destination="@id/externalstorage" />
+        <action
+            android:id="@+id/action_nav_home_to_notification_fragment"
+            app:destination="@id/notification_fragment" />
+        <action
+            android:id="@+id/action_nav_home_to_implicitintent"
+            app:destination="@id/implicitintent" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.lnt.navigationdrawer.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.lnt.navigationdrawer.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/notification_fragment"
+        android:name="com.lnt.navigationdrawer.Notification"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification"/>
+    <fragment
+        android:id="@+id/externalstorage"
+        android:name="com.lnt.navigationdrawer.externalstorage"
+        android:label="fragment_externalstorage"
+        tools:layout="@layout/fragment_externalstorage" />
+    <fragment
+        android:id="@+id/internalstorage"
+        android:name="com.lnt.navigationdrawer.internalstorage"
+        android:label="fragment_internalstorage"
+        tools:layout="@layout/fragment_internalstorage" />
+    <fragment
+        android:id="@+id/implicitintent"
+        android:name="com.lnt.navigationdrawer.implicitintent"
+        android:label="fragment_implicitintent"
+        tools:layout="@layout/fragment_implicitintent" />
+</navigation>
